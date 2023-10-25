@@ -1,3 +1,21 @@
+<?php
+// $paragraph = $_GET['paragraph'];
+// se il testo non c'è , il testo sarà NO TEXT
+// sintassi 1 (con ternario)
+$paragraph = isset ($_GET['paragraph']) ? $_GET['paragraph'] : "NO TEXT";
+
+
+// $word = $_GET['word'];
+// se la BAD WORD non c'è la parola sarà NO BAD WORD
+// sintassi 2 (compatta)
+$word = $_GET['word'] ?? "NO BAD WORD";
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,28 +24,16 @@
   <!-- bootstrap cdnj -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <title>php badwords</title>
+  <title>Atterraggio form GET</title>
 </head>
 <body>
   <div class="container my-5 ">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 text-center">
 
-      <!-- qui inizia il form -->
-      <form action="form-di-atterraggio.php" method="GET">
-  <div class="mb-3">
-    <label for="paragraph" class="form-label">Paragrafo</label>
-    <input type="text" class="form-control" id="paragraph" name="paragraph" placeholder ="Inserire un testo">
-    <div id="emailHelp" class="form-text"></div>
-  </div>
-  <div class="mb-3">
-    <label for="lastname" class="form-label">Parola da censurare</label>
-    <input type="text" class="form-control" id="word" name="word" placeholder ="bad word">
-    <div id="emailHelp" class="form-text"></div>
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Invia</button>
-</form>
+     <h1>Atterraggio form get</h1>
+     <h2>Paragrafo : <?php echo $paragraph ?></h2>
+     <h3>Bad Word : <?php echo $word ?></h3>
 
 <!-- 
   Però quanto a te quanto quel che non puoi fare che tu per te qualcosa da poter fare dovrebbe esserci Ma non ti costringerà nessuno pensa da te stesso decidi da te stesso che cosa adesso tu stesso debba fare.
