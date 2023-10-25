@@ -20,7 +20,7 @@ $paragraph = isset ($_GET['paragraph']) ? $_GET['paragraph'] : "NO TEXT";
 $word = $_GET['word'] ?? "NO BAD WORD";
 
 $stringa_replace = str_replace($word , '***' , $paragraph);
-var_dump($stringa_replace);
+
 ?>
 
 
