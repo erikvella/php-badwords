@@ -1,4 +1,13 @@
 <?php
+
+
+
+
+ 
+    /*
+        Output: il valore è una stringa vuota
+    */
+
 // $paragraph = $_GET['paragraph'];
 // se il testo non c'è , il testo sarà NO TEXT
 // sintassi 1 (con ternario)
@@ -10,6 +19,8 @@ $paragraph = isset ($_GET['paragraph']) ? $_GET['paragraph'] : "NO TEXT";
 // sintassi 2 (compatta)
 $word = $_GET['word'] ?? "NO BAD WORD";
 
+$stringa_replace = str_replace($word , '***' , $paragraph);
+var_dump($stringa_replace);
 ?>
 
 
@@ -32,8 +43,10 @@ $word = $_GET['word'] ?? "NO BAD WORD";
       <div class="col-6 text-center">
 
      <h1>Atterraggio form get</h1>
-     <h2>Paragrafo : <?php echo $paragraph ?></h2>
+     <h2>Paragrafo : <?php echo $paragraph ?> Lunghezza: <?php echo strlen($paragraph) ?> caratteri</h2>
      <h3>Bad Word : <?php echo $word ?></h3>
+
+     <h1>Paragrafo reimpostato : <?php echo $stringa_replace ?> Lunghezza: <?php echo strlen($stringa_replace) ?> caratteri</h1>
 
 <!-- 
   Però quanto a te quanto quel che non puoi fare che tu per te qualcosa da poter fare dovrebbe esserci Ma non ti costringerà nessuno pensa da te stesso decidi da te stesso che cosa adesso tu stesso debba fare.

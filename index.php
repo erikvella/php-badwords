@@ -18,16 +18,17 @@
   <div class="mb-3">
     <label for="paragraph" class="form-label">Paragrafo</label>
     <input type="text" class="form-control" id="paragraph" name="paragraph" placeholder ="Inserire un testo">
-    <div id="emailHelp" class="form-text"></div>
+    
   </div>
   <div class="mb-3">
-    <label for="lastname" class="form-label">Parola da censurare</label>
+    <label for="word" class="form-label">Parola da censurare</label>
     <input type="text" class="form-control" id="word" name="word" placeholder ="bad word">
-    <div id="emailHelp" class="form-text"></div>
+    
   </div>
   
   <button type="submit" class="btn btn-primary">Invia</button>
 </form>
+
 
 <!-- 
   Però quanto a te quanto quel che non puoi fare che tu per te qualcosa da poter fare dovrebbe esserci Ma non ti costringerà nessuno pensa da te stesso decidi da te stesso che cosa adesso tu stesso debba fare.
