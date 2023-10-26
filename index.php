@@ -30,9 +30,7 @@
 </form>
 
 
-<!-- 
-  Però quanto a te quanto quel che non puoi fare che tu per te qualcosa da poter fare dovrebbe esserci Ma non ti costringerà nessuno pensa da te stesso decidi da te stesso che cosa adesso tu stesso debba fare.
- -->
+
 
       </div>
     </div>

@@ -11,8 +11,8 @@
 // $paragraph = $_GET['paragraph'];
 // se il testo non c'è , il testo sarà NO TEXT
 // sintassi 1 (con ternario)
-$paragraph = isset ($_GET['paragraph']) ? $_GET['paragraph'] : "NO TEXT";
-
+$paragraph = !empty($_GET['paragraph']) ? $_GET['paragraph'] : "NO TEXT";
+var_dump($paragraph);
 
 // $word = $_GET['word'];
 // se la BAD WORD non c'è la parola sarà NO BAD WORD
